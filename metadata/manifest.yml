@@ -1,0 +1,16 @@
+Name: cutadapt
+Cartridge-Short-Name: CUTADAPT
+Display-Name: cutadapt-1.3
+Description: CUTADAPT 1.3 (https://pypi.python.org/pypi/cutadapt/1.3).
+Version: "1.3"
+Cartridge-Version: 0.1.0
+Categories:
+  - service
+Provides:
+  - cutadapt-1.3
+  - cutadapt
+Scaling:
+  Min: 1
+  Max: -1
+  
+Source-Url: https://github.com/jmccormick2001/voltdb-cart.git
