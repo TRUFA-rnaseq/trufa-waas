@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+#
+# perform some setup of the openshift env after the installation
+#
+
+set -u
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+#echo $/bin:${OPENSHIFT_CUTADAPT_DIR}cutadapt-install/bin > ${OPENSHIFT_CUTADAPT_DIR}env/OPENSHIFT_CUTADAPT_PATH_ELEMENT
+
+mkdir ${OPENSHIFT_CUTADAPT_DIR}logs
+
+
+client_result "setup completed"
