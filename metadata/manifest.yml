@@ -1,5 +1,6 @@
 Name: cutadapt
 Cartridge-Short-Name: CUTADAPT
+Cartridge-Vendor: Alberto Otero Marquez
 Display-Name: cutadapt-1.3
 Description: CUTADAPT 1.3 (https://pypi.python.org/pypi/cutadapt/1.3).
 Version: "1.3"
