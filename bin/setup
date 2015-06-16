@@ -4,7 +4,7 @@
 # perform some setup of the openshift env after the installation
 #
 
-set -u
+#set -u
 
 #source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
@@ -13,4 +13,4 @@ set -u
 #mkdir ${OPENSHIFT_CUTADAPT_DIR}logs
 
 
-client_result "setup completed"
+#client_result "setup completed"
