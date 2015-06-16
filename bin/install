@@ -7,5 +7,8 @@ client_result "installing cutadapt....`date`"
 #Descomprimimos aqui
 tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt
+#Compilamos cutadapt???
+#Necesitamos dependencias python-dev y libxslt-dev
+python cutadapt/setup.py built
 client_result "install complete....`date`"
 #echo "hola" > /dev/null
