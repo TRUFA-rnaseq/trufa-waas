@@ -2,7 +2,7 @@
 
 #Unpack .tar.gz
 
-source $OPENSHIFT_CARTRIDGE_SDK_BASH
+#source $OPENSHIFT_CARTRIDGE_SDK_BASH
 client_result "installing voltdb....`date`"
 #Descomprimimos aqui
 #tar -xvzf versions/cutadapt-*/cutadapt-*
