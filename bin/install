@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 #Unpack .tar.gz
 
@@ -8,3 +8,4 @@
 #tar -xvzf versions/cutadapt-*/cutadapt-*
 #mv cutadapt-* cutadapt
 #client_result "install complete....`date`"
+echo "hola" > /dev/null
