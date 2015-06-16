@@ -7,7 +7,7 @@ source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 client_result "installing cutadapt....`date`"
 
-tar xvzf $OPENSHIFT_CUTADAPT_DIR/versions/cutadapt-*/cutadapt* --directory=$OPENSHIFT_CUTADAPT_DIR
-mv $OPENSHIFT_CUTADAPT_DIR/cutadapt-* $OPENSHIFT_CUTADAPT_DIR/cutadapt-install
+#tar xvzf $OPENSHIFT_CUTADAPT_DIR/versions/cutadapt-*/cutadapt* --directory=$OPENSHIFT_CUTADAPT_DIR
+#mv $OPENSHIFT_CUTADAPT_DIR/cutadapt-* $OPENSHIFT_CUTADAPT_DIR/cutadapt-install
 
 client_result "install complete....`date`"
