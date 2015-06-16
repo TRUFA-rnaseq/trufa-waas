@@ -6,9 +6,9 @@ source $OPENSHIFT_CARTRIDGE_SDK_BASH
 client_result "installing cutadapt....`date`"
 #Descomprimimos aqui
 tar -xvzf versions/cutadapt-*/cutadapt-*
-mv cutadapt-* cutadapt
+mv cutadapt-* cutadapt-install
 #Compilamos cutadapt???
 #Necesitamos dependencias python-devel y libxslt-devel
-python cutadapt/setup.py built
+python cutadapt-install/setup.py built
 client_result "install complete....`date`"
 #echo "hola" > /dev/null
