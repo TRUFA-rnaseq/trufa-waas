@@ -1,13 +1,14 @@
-#!/bin/bash -e
+#!/bin/bash
 
-#
-# install the voltdb media into the openshift app
-#
+#Unpack .tar.gz
+
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
-
 client_result "installing cutadapt....`date`"
-
-tar xvzf $OPENSHIFT_CUTADAPT_DIR/versions/cutadapt-*/cutadapt* --directory=$OPENSHIFT_CUTADAPT_DIR
-mv $OPENSHIFT_CUTADAPT_DIR/cutadapt-* $OPENSHIFT_CUTADAPT_DIR/cutadapt-install
-
+#Descomprimimos aqui
+tar -xvzf versions/cutadapt-*/cutadapt-*
+mv cutadapt-* cutadapt-install
+#Compilamos cutadapt???
+#Necesitamos dependencias python-devel y libxslt-devel
+python cutadapt-install/setup.py build > log.txt
 client_result "install complete....`date`"
+#echo "hola" > /dev/null
