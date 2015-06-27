@@ -5,10 +5,10 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 client_result "installing cutadapt....`date`"
 #Descomprimimos aqui
-tar -xvzf versions/cython-*/Cython-*
-mv Cython-* cython-install
-python cython-install/setup.py install >cythonInstall.txt
-sleep(1)
+#tar -xvzf versions/cython-*/Cython-*
+#mv Cython-0.22.1 cython-install
+#python cython-install/setup.py install >cythonInstall.txt
+easy_install cython 
 tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt-install
 #Compilamos cutadapt???
