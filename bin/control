@@ -18,7 +18,7 @@ function status() {
 
 function start() {
 
-     client_result "starting cutadapt...."
+     
         ps -C cutadapt > /dev/null
         if [ "$?" -eq "0" ]; then
                 client_result "cutadapt is running already...run stop first";
