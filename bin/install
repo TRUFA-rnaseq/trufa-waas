@@ -11,7 +11,7 @@ tar -xvzf versions/cython-*/Cython-*
 mv Cython-0.22.1 cython-install
 cd cython-install
 python setup.py install >cythonInstall.txt
-sleep 180
+sleep 5
 cd ..
 tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt-install
