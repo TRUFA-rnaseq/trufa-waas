@@ -4,14 +4,11 @@
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 client_result "installing cutadapt....`date`"
-client_result "`whoami`"
-client_result "`pwd`"
 #Descomprimimos aqui
 tar -xvzf versions/cython-*/Cython-*
 mv Cython-0.22.1 cython-install
 cd cython-install
 python setup.py install >cythonInstall.txt
-sleep 5
 cd ..
 tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt-install
