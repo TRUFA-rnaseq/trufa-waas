@@ -13,7 +13,7 @@ tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt-install
 #Compilamos cutadapt???
 #Necesitamos dependencias python-devel y libxslt-devel
-python setup.py build > logBuild.txt
-python setup.py install >logInstall.txt
+python cutadapt-install/setup.py build > logBuild.txt
+python cutadapt-install/setup.py install >logInstall.txt
 client_result "install complete....`date`"
 
