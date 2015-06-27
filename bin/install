@@ -18,6 +18,6 @@ mv cutadapt-* cutadapt-install
 #Necesitamos dependencias python-devel y libxslt-devel
 cd cutadapt-install/
 python setup.py build > logBuild.txt
-#python cutadapt-install/setup.py install >logInstall.txt
+python setup.py install >logInstall.txt
 client_result "install complete....`date`"
 
