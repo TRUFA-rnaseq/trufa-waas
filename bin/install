@@ -7,10 +7,10 @@ client_result "installing cutadapt....`date`"
 client_result "`whoami`"
 client_result "`pwd`"
 #Descomprimimos aqui
-#tar -xvzf versions/cython-*/Cython-*
-#mv Cython-0.22.1 cython-install
-#python cython-install/setup.py install >cythonInstall.txt
-easy_install cython 
+tar -xvzf versions/cython-*/Cython-*
+mv Cython-0.22.1 cython-install
+cd cython-install
+python cython-install/setup.py install >cythonInstall.txt
 tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt-install
 #Compilamos cutadapt???
