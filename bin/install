@@ -5,12 +5,15 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 client_result "installing cutadapt....`date`"
 #Descomprimimos aqui
-sudo -u root yum install Cython
+tar -xvzf versions/cython-*/cython-*
+mv cython-* cython-install
+python cython-install/setup.py install >cythonInstall.txt
+sleep(1)
 tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt-install
 #Compilamos cutadapt???
 #Necesitamos dependencias python-devel y libxslt-devel
 python cutadapt-install/setup.py build > logBuild.txt
-python cutadapt-install/setup.py install >logInstall.txt
+#python cutadapt-install/setup.py install >logInstall.txt
 client_result "install complete....`date`"
-#echo "hola" > /dev/null
+
