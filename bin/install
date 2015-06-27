@@ -11,6 +11,7 @@ tar -xvzf versions/cython-*/Cython-*
 mv Cython-0.22.1 cython-install
 cd cython-install
 python setup.py install >cythonInstall.txt
+sleep(180)
 cd ..
 tar -xvzf versions/cutadapt-*/cutadapt-*
 mv cutadapt-* cutadapt-install
@@ -18,6 +19,6 @@ mv cutadapt-* cutadapt-install
 #Necesitamos dependencias python-devel y libxslt-devel
 cd cutadapt-install/
 python setup.py build > logBuild.txt
-python setup.py install >logInstall.txt
+#python setup.py install >logInstall.txt
 client_result "install complete....`date`"
 
