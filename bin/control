@@ -25,9 +25,6 @@ function start() {
         else
 #			getinternalip
 			client_result "cutadapt is not running...starting it now"
-            #export HOME=${HOME}/app-root/data
-	    #Ejecutar el programa en background
-	    #nohup cutadapt/bin/cutadapt -a AACCGGTT input.fastq > output.fastq &
         fi
 
 }
